@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/information-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      .assignment-container {
+        color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.assignment-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.assignment-description-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.assigment-title {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+#assignment-title {
+  font-size: 30px;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#assignment-title.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.asignment-description {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+#task {
+  margin-bottom: 10px;
+}
+
+#tech-skill {
+  font-weight: bold;
+  color: navy;
+  margin-bottom: 10px;
+}
+
+.tech-stack {
+  display: flex;
+
+  gap: 10px;
+}
+
+.tech-stack span {
+  color: black;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.d3-image {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.d3-image img {
+  max-width: 100%;
+  height: auto;
+}
+    </style>
+</head>
+<body>
+  <div class="navigation-bar">
+    <nav>
+      <div class="logo">
+        <h1>Migration Statistics</h1>
+      </div>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="dataVisualization1.html">Chorlopath Map</a>
+        </li>
+        <li>
+          <a href="dataVisualization2.html">Bar Graph</a>
+        </li>
+        <li>
+          <a href="dataVisualization3.html">Pie Chart</a>
+        </li>
+        <li>
+          <a href="aboutUs.html">About Us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menubar">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="dataVisualization1.html">Chorlopath Map</a>
+        </li>
+        <li>
+          <a href="dataVisualization2.html">Bar Graph</a>
+        </li>
+        <li>
+          <a href="dataVisualization3.html">Pie Chart</a>
+        </li>
+        <li>
+          <a href="aboutUs.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+    <script src="js/script.js"></script>
+  </div>
+  <div class="assignment-container">
+    <div class="assignment-description-container">
+      <div class="assigment-title">
+        <p id="assignment-title">Migration Data Visualization Project</p>
+      </div>
+      <div class="asignment-description">
+        <p id="task">This Assignment Main Task is using dataset and D3 javascript library<br> create webpage to show v of the data sets.The dataset topic is migration</p>
+        <div class="techskill">
+          <p id="tech-skill">Tech Skill Used for this project</p>
+          <div class="tech-stack">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript|D3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d3-image">
+      <img src="images/migration1.png" alt="d3 Library Image" width="600px">
+    </div>
+  </div>
+  <div class="graph-infromation-container">
+    <div class="information-container">
+      <div class="title-container">
+        <span class="title-line"></span>
+        <p id="graph-information-title">How the Data Processing has Done?</p>
+        <span class="title-line"></span>
+    </div>
+      <p id="graph-infromation-description">First Dataset is download from <string>OCED</string> it gives  migrate data and health data to 2023
+      After the data set it download get required data from the data set  if data processing needs data processing can done <strong>Manually</strong>or
+    <strong>Python</strong>After data processing is done create csv file and show data as a graph on the webpage. For this webpage three visualization are use  Choropleth Map 
+  Bar Chart and Pie Chart are used.</p>
+    </div> 
+</div>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="project-info">
+        <h3>Data Visualization Project</h3>
+        <p>Created by:</p>
+        <p>Pamudi chamodya 104862097</p>
+        <p>Dulakshi Bandara 104861528</p>
+      </div>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Data Visualization Project. All rights reserved.</p>
+    </div>
+  </footer>
+          
+          
+</body>
+</html>
